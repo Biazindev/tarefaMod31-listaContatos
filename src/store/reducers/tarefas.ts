@@ -36,9 +36,7 @@ const tarefasSlice = createSlice({
   initialState,
   reducers: {
     remover: (state, action: PayloadAction<number>) => {
-      state.itens = state.itens.filter(
-        (tarefa) => tarefa.id !== action.payload
-      )
+      state.itens = state.itens.filter((tarefa) => tarefa.id !== action.payload)
     },
     editar: (state, action: PayloadAction<Tarefa>) => {
       const indexDaTarefa = state.itens.findIndex(
@@ -58,7 +56,9 @@ const tarefasSlice = createSlice({
       } else {
         const novaTarefa: Tarefa = {
           ...action.payload,
-          id: state.itens.length ? state.itens[state.itens.length - 1].id + 1 : 1
+          id: state.itens.length
+            ? state.itens[state.itens.length - 1].id + 1
+            : 1
         }
         state.itens.push(novaTarefa)
       }

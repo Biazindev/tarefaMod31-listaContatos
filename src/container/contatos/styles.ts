@@ -4,7 +4,7 @@ export const Main = styled.div`
   width: 100vw;
   height: 10vh;
   background: #808e9b;
-  box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
 `
@@ -19,7 +19,6 @@ export const Titulo = styled.p`
   display: block;
   margin-top: 40px;
   margin-bottom: 40px;
-
 `
 export const Center = styled.ul`
   height: 100vh;
@@ -28,18 +27,18 @@ export const Center = styled.ul`
   display: block;
   height: auto;
   position: absolute;
-  background-color: #FCFCFC;
-    box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
-    padding: 16px;
-    border-radius: 16px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  border-radius: 16px;
 
-    label {
-        display: block;
-        align-items: center;
-        margin-bottom: 16px;
-        background-color: #FCFCFC;
-        color: #000;
-    }
+  label {
+    display: block;
+    align-items: center;
+    margin-bottom: 16px;
+    background-color: #fcfcfc;
+    color: #000;
+  }
 `
 export const Form = styled.form`
   max-width: 100%;
@@ -140,7 +139,7 @@ export const Botao = styled.button`
 `
 
 export const Descricao = styled.textarea`
-  color: #8B8B8B;
+  color: #8b8b8b;
   font-size: 14px;
   line-height: 24px;
   font-family: 'Roboto Mono', monospace;
@@ -183,10 +182,10 @@ export const BotaoCancelarRemover = styled(Botao)`
 export const Aside = styled.aside`
   width: 100%;
   display: block;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   border-radius: 8px;
 `
 export const List = styled.div`
-display: inline-block;
-margin: 8px
+  display: inline-block;
+  margin: 8px;
 `
